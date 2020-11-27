@@ -26,6 +26,7 @@ export class Cart extends Component {
                         <div className='details' key={item.id}>
                             <img src={item.image} alt='' />
                             <div className='box'>
+                                <br/>
                                     <div className='row'>
                                         <h2>{item.title}</h2>
                                         <span>${item.price * item.count}</span>
@@ -37,8 +38,12 @@ export class Cart extends Component {
                                         <span>{item.count}</span>
                                         <button className='count' onClick={() => increase(item.id)}> + </button>
                                     </div>
+
                             </div>
+                            <br/>
+                            <br/>
                             <div className='delete' onClick={() => removeProduct(item.id)}>X</div>
+                            
                         </div>
                     ))
                 }
