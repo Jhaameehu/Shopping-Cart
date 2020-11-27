@@ -17,6 +17,7 @@ export class Section extends Component {
                 {/* <Route path='/product/:id' component={Details} /> */}
                 <Route path='/cart' component={Cart} />
                 <Route path='/payment' component={Payment} />
+                <Products />
 
             </section>
         )
