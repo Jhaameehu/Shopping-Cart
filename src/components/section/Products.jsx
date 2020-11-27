@@ -13,12 +13,12 @@ export class Products extends Component {
                 {
                     products.map(product =>(
                         <div className='card' key={product.id}>
-                            <Link to = {`/product/${product.id}`}>
+                            {/* <Link to = {`/product/${product.id}`}> */}
                                 <img src={product.image} alt=''/>
-                            </Link>
+                            {/* </Link> */}
                             <div className='content'>
-                                <h3>
-                                    <Link to ={`/product/${product.id}`}>{product.title}</Link>
+                                <h3>{product.title}
+                                    {/* <Link to ={`/product/${product.id}`}></Link> */}
                                 </h3>
                                 <span>${product.price}</span>
                                 <p>{product.description}</p>
